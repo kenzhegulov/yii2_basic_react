@@ -33,14 +33,14 @@ var Author = React.createClass({
      if (error) {
       return <div>Ошибка: {error.message}</div>;
     } else if (!isLoaded) {
-      return <h2>Загрузка...</h2>;
+      return <h4>Загрузка...</h4>;
     } else {
       return (
         <ul>
           {data.map(
                   (item,i) => (
             <div key={i}>
-              <h3>{item.name}</h3> Кол. книг на сайте: {item.book_count}
+              <h4>{item.name}</h4> Кол. книг на сайте: {item.book_count}<hr/>
             </div>
           ))}
         </ul>
