@@ -50,6 +50,6 @@ var Author = React.createClass({
 });
 
 ReactDOM.render(
-  <Author url="http://62ce86b7.ngrok.io/site/book" pollInterval={2000} />, // new
+  <Author url="/site/book" pollInterval={2000} />, // new
   document.getElementById('content')
 );
